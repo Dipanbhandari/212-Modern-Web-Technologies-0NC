@@ -7,10 +7,10 @@ const holidays = [
   { name: 'Thanksgiving', date: '2025-10-13' }
 ];
 
-// Calculate days until each holiday
+// Calculate days until each holidays
 console.log('\n📅 Days until holidays:');
 holidays.forEach(holiday => {
-  const today = new Date();
+  const today = new Date();  
   const hDate = new Date(holiday.date);
   const diffTime = hDate - today;
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
